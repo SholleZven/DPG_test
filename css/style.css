@@ -183,7 +183,7 @@ button {
 }
 
 button:focus {
-  background-image: url(/img/Vector.png);
+  background-image: url("../img/Vector.png");
   background-size: 15px 11px;
   background-repeat: no-repeat;
   background-position: center;
