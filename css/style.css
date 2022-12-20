@@ -6,7 +6,8 @@ body {
   font-size: 18px;
   line-height: 120%;
   color: #ffffff;
-  background: url("/img/cosmos-1845140_1920\ 1.jpg");
+  background: url("img/cosmos-1845140_1920\ 1.jpg");
+  background-repeat: no-repeat;
 }
 img {
   max-width: 100%;
@@ -89,7 +90,7 @@ textarea {
 
 .container {
   width: 1920px;
-  padding-bottom: 83px;
+  padding-bottom: 70px;
 }
 
 .block {
@@ -216,4 +217,237 @@ button:focus {
 
 .send-button a:focus {
   color: #b9bee5;
+}
+
+/* Стили для Адаптива tablet*/
+
+@media screen and (max-width: 1023px) {
+  body {
+    min-width: 768px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: #ffffff;
+    background: url("/img/cosmos-1845140_1920\ 1.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  a {
+    color: #797ea3;
+    text-decoration: underline;
+  }
+  a:hover {
+    color: #b9bee5;
+  }
+
+  a:focus {
+    color: #b9bee5;
+  }
+
+  input {
+    display: block;
+    width: 100%;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: #ffffff;
+    margin: 0;
+    background-color: #171929;
+    border: none;
+    border-bottom: 1px solid #3f4363;
+    margin-top: 7px;
+  }
+
+  textarea {
+    display: block;
+    width: 100%;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: #ffffff;
+    margin: 0;
+    background-color: #171929;
+    border: none;
+    border-bottom: 1px solid #3f4363;
+    resize: none;
+    margin-top: 7px;
+    padding: 0;
+  }
+
+  .input:active:focus {
+    background-color: #171929;
+    color: #ffffff;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+  }
+
+  .promo_block {
+    width: 1920px;
+    padding-top: 50px;
+    padding-bottom: 25px;
+  }
+
+  .promo {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 120%;
+    text-align: center;
+  }
+
+  .promo p {
+    margin: 0 auto;
+  }
+
+  .container {
+    width: 1920px;
+    padding-bottom: 70px;
+  }
+
+  .block {
+    width: 389px;
+    margin: 0 auto;
+    background: #171929;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.7);
+    border-radius: 27px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 45px;
+  }
+
+  .block_header {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .required p {
+    margin: 0;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 120%;
+  }
+
+  .symbol {
+    padding-right: 1px;
+    padding-left: 1px;
+    color: #3f4363;
+  }
+
+  .text_info {
+    color: #797ea3;
+  }
+
+  .required {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  .user_answer {
+    width: 100%;
+    padding-bottom: 35px;
+  }
+
+  .user_answer:last-child {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  .user_answer p {
+    margin: 0;
+  }
+
+  .user_info {
+    width: 100%;
+  }
+
+  .sub_text {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 30px;
+  }
+
+  button {
+    background: #2c2f47;
+    border-radius: 8px;
+    width: 31px;
+    height: 31px;
+    border: none;
+  }
+
+  button:focus {
+    background-image: url(/img/Vector.png);
+    background-size: 15px 11px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .sub_text p {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 120%;
+    color: #797ea3;
+    margin-left: 12px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    align-self: center;
+  }
+
+  .send-button {
+    margin: 0 auto;
+  }
+  .send-button a {
+    text-decoration: none;
+    background: #2c2f47;
+    border-radius: 28px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    padding: 11px 25px 11px 25px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .send-button a:hover {
+    color: #b9bee5;
+  }
+
+  .send-button a:focus {
+    color: #b9bee5;
+  }
+}
+/* Стили для Адаптива Mobile*/
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  body {
+    min-width: 375px;
+  }
 }
