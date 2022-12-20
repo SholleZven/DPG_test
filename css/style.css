@@ -8,7 +8,7 @@ body {
   color: #ffffff;
   background-image: url("../img/cosmos.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 img {
   max-width: 100%;
